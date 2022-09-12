@@ -35,11 +35,11 @@
                     </div>
                 </div>
                 <!--<a class="interactive-link interactive-link_favorites col-auto" href="#"> <i class="interactive-link__icon fas fa-heart"></i> <span class="interactive-link__title d-none d-xl-inline">Поддержать проект</span> <span class="interactive-link__counter in-favorite"></span> </a>
-						<a class="interactive-link interactive-link_compare col-auto" href="#"> <i class="interactive-link__icon fas fa-tasks"></i> <span class="interactive-link__title d-none d-xl-inline">База книг</span> <span class="interactive-link__counter in-compare"></span> </a>
-						<a class="interactive-link interactive-link_cart col-auto" href="#"> <i class="interactive-link__icon fas fa-shopping-bag"></i> <span class="interactive-link__title d-none d-lg-inline">Прокат фильмов</span> <span class="interactive-link__counter in-cart"></span> </a>-->
+					<a class="interactive-link interactive-link_compare col-auto" href="#"> <i class="interactive-link__icon fas fa-tasks"></i> <span class="interactive-link__title d-none d-xl-inline">База книг</span> <span class="interactive-link__counter in-compare"></span> </a>
+					<a class="interactive-link interactive-link_cart col-auto" href="#"> <i class="interactive-link__icon fas fa-shopping-bag"></i> <span class="interactive-link__title d-none d-lg-inline">Прокат фильмов</span> <span class="interactive-link__counter in-cart"></span> </a>-->
                 <div class="header__auth col-auto">
-                    <a class="interactive-link interactive-link_login" href="/#modalLogin" data-toggle="modal"> <i class="interactive-link__icon fas fa-lock"></i> <span class="interactive-link__title d-none d-lg-inline">Вход</span> </a>
-                    <a class="interactive-link interactive-link_registration d-none d-lg-inline" href="#"> <i class="fa-solid fa-user-plus"></i> <span class="interactive-link__title">Регистрация</span> </a>
+                    <a class="interactive-link interactive-link_login" href="/?page=auth" data-toggle="modal"> <i class="interactive-link__icon fas fa-lock"></i> <span class="interactive-link__title d-none d-lg-inline">Вход</span> </a>
+                    <a class="interactive-link interactive-link_registration d-none d-lg-inline" href="/?page=register"> <i class="fa-solid fa-user-plus"></i> <span class="interactive-link__title">Регистрация</span> </a>
                 </div>
             </div>
         </div>
@@ -61,19 +61,19 @@
                     <nav class="navigation-block__menu navigation navigation_horizontal d-none d-xl-flex">
                         <ul class="navigation__list navigation__list_main">
                             <li class="navigation__item navigation__item_main"><a href="/">Главная</a></li>
-                            <li class="navigation__item navigation__item_main"><a href="/about">О нас</a></li>
-                            <li class="navigation__item navigation__item_main"><a href="/soon">Мероприятия</a></li>
-                            <li class="navigation__item navigation__item_main"><a href="/soon">Новости</a></li>
-                            <li class="navigation__item navigation__item_main"><a href="/soon">Архив</a></li>
-                            <li class="navigation__item navigation__item_main"><a href="/soon">Галерея</a></li>
+                            <li class="navigation__item navigation__item_main"><a href="/?page=about">О нас</a></li>
+                            <li class="navigation__item navigation__item_main"><a href="/?page=soon">Мероприятия</a></li>
+                            <li class="navigation__item navigation__item_main"><a href="/?page=soon">Новости</a></li>
+                            <li class="navigation__item navigation__item_main"><a href="/?page=soon">Архив</a></li>
+                            <li class="navigation__item navigation__item_main"><a href="/?page=soon">Галерея</a></li>
                             <li class="navigation__item navigation__item_main navigation__item_parent">
                                 <a href="#">Ещё</a>
                                 <ul class="navigation__list navigation__list_child">
-                                    <li class="navigation__item navigation__item_child"><a href="#">Покупка фильмов</a></li>
-                                    <li class="navigation__item navigation__item_child"><a href="#">Вопрос-Ответ</a></li>
-                                    <li class="navigation__item navigation__item_child"><a href="#">Статьи</a></li>
-                                    <li class="navigation__item navigation__item_child"><a href="#">Отзывы</a></li>
-                                    <li class="navigation__item navigation__item_child"><a href="#">Обратная связь</a></li>
+                                    <li class="navigation__item navigation__item_child"><a href="/?page=soon">Покупка фильмов</a></li>
+                                    <li class="navigation__item navigation__item_child"><a href="/?page=soon">Вопрос-Ответ</a></li>
+                                    <li class="navigation__item navigation__item_child"><a href="/?page=soon">Статьи</a></li>
+                                    <li class="navigation__item navigation__item_child"><a href="/?page=soon">Отзывы</a></li>
+                                    <li class="navigation__item navigation__item_child"><a href="/?page=soon">Обратная связь</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -81,11 +81,12 @@
                 </div>
                 <div class="navigation-block__right col-auto col-sm col-xl-auto">
                     <nav class="navigation-block__socials">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="//instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="//vk.com" target="_blank"><i class="fab fa-vk"></i></a>
                     </nav>
                     <div class="navigation-block__search d-none d-sm-block">
-                        <form class="form" method="get" action="/search/">
+                        <!--<form class="form" method="get" action="/search/">-->
+						<form class="form" method="get" action="/?page=soon">
                             <input type="hidden" name="module" value="search" />
                             <div class="control">
                                 <input class="input" type="text" name="searchword" placeholder="Поиск по сайту" />
@@ -138,7 +139,8 @@
     <nav class="navigation-block navigation-block_mobile navigation navigation_vertical d-xl-none">
         <div class="shop-block-navigation__box">
             <ul class="navigation__list navigation__list_main">
-                <li class="navigation__item navigation__item_main navigation__item_parent">
+				<!-- Каталог -->
+                <!--<li class="navigation__item navigation__item_main navigation__item_parent">
                     <a href="#">Каталог<i class="fas fa-plus-circle"></i></a>
                     <ul class="navigation__list navigation__list_child">
                         <li class="navigation__item navigation__item_child navigation__item_parent">
@@ -161,20 +163,20 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li class="navigation__item navigation__item_main"><a href="#">Акции</a></li>
-                <li class="navigation__item navigation__item_main"><a href="#">Оплата</a></li>
-                <li class="navigation__item navigation__item_main"><a href="#">Доставка</a></li>
-                <li class="navigation__item navigation__item_main"><a href="#">Самовывоз</a></li>
-                <li class="navigation__item navigation__item_main"><a href="#">Контакты</a></li>
+                </li>-->
+                <li class="navigation__item navigation__item_main"><a href="/?page=soon">Акции</a></li>
+                <li class="navigation__item navigation__item_main"><a href="/?page=soon">Оплата</a></li>
+                <li class="navigation__item navigation__item_main"><a href="/?page=soon">Доставка</a></li>
+                <li class="navigation__item navigation__item_main"><a href="/?page=soon">Самовывоз</a></li>
+                <li class="navigation__item navigation__item_main"><a href="/?page=soon">Контакты</a></li>
                 <li class="navigation__item navigation__item_main navigation__item_parent">
                     <a href="#">Ещё<i class="fas fa-plus-circle"></i></a>
                     <ul class="navigation__list navigation__list_child">
-                        <li class="navigation__item navigation__item_child"><a href="#">О компании</a></li>
-                        <li class="navigation__item navigation__item_child"><a href="#">Вопрос-Ответ</a></li>
-                        <li class="navigation__item navigation__item_child"><a href="#">Статьи</a></li>
-                        <li class="navigation__item navigation__item_child"><a href="#">Отзывы</a></li>
-                        <li class="navigation__item navigation__item_child"><a href="#">Обратная связь</a></li>
+                        <li class="navigation__item navigation__item_child"><a href="/?page=soon">О компании</a></li>
+                        <li class="navigation__item navigation__item_child"><a href="/?page=soon">Вопрос-Ответ</a></li>
+                        <li class="navigation__item navigation__item_child"><a href="/?page=soon">Статьи</a></li>
+                        <li class="navigation__item navigation__item_child"><a href="/?page=soon">Отзывы</a></li>
+                        <li class="navigation__item navigation__item_child"><a href="/?page=soon">Обратная связь</a></li>
                     </ul>
                 </li>
             </ul>
