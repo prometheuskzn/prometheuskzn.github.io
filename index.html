@@ -32,14 +32,14 @@
 		<script src="js/get.js"></script>
 	</head>
 
-	<body class="page page_home">
-		<div class="page__box">
+	<body class="p p_home">
+		<div class="p__box">
 			<include src="./header.html"></include>
 			
-			<div class="page__body">
+			<div class="p__body">
 				<div class="body__container container-fluid">
 					<div class="body__row row">
-						<main class="page__content col-12 col-lg-9 order-lg-last">
+						<main class="p__content col-12 col-lg-9 order-lg-last">
 						<include src=""></include>
 						</main>
 						<include src="./menu.html"></include>
@@ -76,12 +76,12 @@
 		<script src="/js/1577d31c8fd8e2768de2f5804e09269c.js"></script>
 		<script src="/js/be5f5a9c72a9b3f374d2c6ceed1c87d0.js"></script>
 		<script>
-		if(getUrlParameter('page') !== false && getUrlParameter('page') != 'header' && getUrlParameter('page') != 'footer' && getUrlParameter('page') != '' && getUrlParameter('page') !== null){
-			file_url = getUrlParameter('page');
+		if(getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null){
+			file_url = getUrlParameter('p');
 		}else{
 			file_url = 'index';
 		}
-		$('main.page__content > include').attr('src', './page/'+file_url+'.html');
+		$('main.p__content > include').attr('src', './p/'+file_url+'.html');
 		</script>
 		<script src="js/include.js"></script>
 	</body>
