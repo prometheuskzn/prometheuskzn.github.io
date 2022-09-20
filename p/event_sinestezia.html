@@ -1,14 +1,50 @@
-<center><h1>Выставка "Итоги лаборатории по синестезии"</h1></center>
-<center>Проводится с 22 сентября по 22 октября 2022 года.</center><br>
+<center><h1>Выставка "Синестезия. Лаборатория по исследованию феномена"</h1></center>
+<center>Проводилась с 30 июня по 15 августа 2022 года</center><br>
 <hr>
 <br>
-На экспозиции будут представлены творческие работы посетителей нашей выставки "Синестезия. Лаборатория по исследованию феномена".
-195 человек - разного возраста, разных профессий, разных культур и конфессий, но когда они создавали по предложенному стихотворению скульптуру или рисовали одну и ту же музыку,
-некоторая схожесть все-таки проступает. Приходите и увидите сами.<br>
+<p>
+<img src="/img/sinesteazia.jpeg" width="50%" alt="Синестезия" align="left" vspace="5" hspace="20">
+Новая визуальная культура существенно изменили чувственное восприятие мира.
+На этой выставке мы попытались на современном этапе продолжить проходившие в Казани исследования и подробнее проанализировать межчувственные связи.
+Посетители нашей лаборатории погружались в необычную атмосферу исследования себя, своих ощущений и получали новый  опыт восприятия.
+</p>
+
+<link rel="stylesheet" href="/css/gallery.css">
+<ul id="thumbs">
+	<li>
+		<a href="/img/luce_1.jpeg" title="Image 1"><img src="/img/luce_1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_2.jpeg" title="Image 2"><img src="/img/luce_3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_3.jpeg" title="Image 3"><img src="/img/luce_4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_4.jpeg" title="Image 4"><img src="/img/luce_5.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_5.jpeg" title="Image 5"><img src="/img/luce_6.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_6.jpeg" title="Image 6"><img src="/img/luce_6.jpeg"></a>
+	</li>
+</ul>
 <br>
-<img src="/img/skulptury_stihov.jpg" alt="Ой, кажется, произошла ошибка" align="center"><br>
-<center>Скульптуры стихов</center><br>
-<hr>
+<p><img id="largeImg" src="/img/luce_1.jpeg" alt="Luce"></p>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+</script>
 <br>
-<img src="/img/Debussi.jpg" alt="Ой, кажется, произошла ошибка" align="center"><br>
-<center>Рисунки на музыку К. Дебюсси</center>
+<a href="http://synesthesia.prometheus.tilda.ws/" target="_blank">Открыть сайт</a>

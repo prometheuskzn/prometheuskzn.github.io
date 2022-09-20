@@ -10,9 +10,6 @@
 </p>
 
 <link rel="stylesheet" href="/css/gallery.css">
-
-<p><img id="largeImg" src="/img/luce_1.jpeg" alt="Luce"></p>
-
 <ul id="thumbs">
 	<li>
 		<a href="/img/luce_1.jpeg" title="Image 1"><img src="/img/luce_1.jpeg"></a>
@@ -33,7 +30,7 @@
 		<a href="/img/luce_6.jpeg" title="Image 6"><img src="/img/luce_6.jpeg"></a>
 	</li>
 </ul>
-
+<p><img id="largeImg" src="/img/luce_1.jpeg" alt="Luce"></p>
 <script>
     thumbs.onclick = function(event) {
       let thumbnail = event.target.closest('a');
@@ -47,4 +44,4 @@
       largeImg.src = href;
       largeImg.alt = title;
     }
-  </script>
+</script>
