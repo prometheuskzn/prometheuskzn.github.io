@@ -11,25 +11,40 @@
 
 <link rel="stylesheet" href="/css/gallery.css">
 
-  <p><img id="largeImg" src="/img/luce_1.jpeg" alt="Luce"></p>
+<p><img id="largeImg" src="/img/luce_1.jpeg" alt="Luce"></p>
 
-  <ul id="thumbs">
-    <li>
-      <a href="/img/luce_1.jpeg" title="Image 1"><img src="/img/luce_1.jpeg"></a>
-    </li>
-    <li>
-      <a href="/img/luce_2.jpeg" title="Image 2"><img src="/img/luce_3.jpeg"></a>
-    </li>
-    <li>
-      <a href="/img/luce_3.jpeg" title="Image 3"><img src="/img/luce_4.jpeg"></a>
-    </li>
-    <li>
-      <a href="/img/luce_4.jpeg" title="Image 4"><img src="/img/luce_5.jpeg"></a>
-    </li>
-    <li>
-      <a href="/img/luce_5.jpeg" title="Image 5"><img src="/img/luce_6.jpeg"></a>
-    </li>
+<ul id="thumbs">
 	<li>
-      <a href="/img/luce_6.jpeg" title="Image 6"><img src="/img/luce_6.jpeg"></a>
-    </li>
-  </ul>
+		<a href="/img/luce_1.jpeg" title="Image 1"><img src="/img/luce_1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_2.jpeg" title="Image 2"><img src="/img/luce_3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_3.jpeg" title="Image 3"><img src="/img/luce_4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_4.jpeg" title="Image 4"><img src="/img/luce_5.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_5.jpeg" title="Image 5"><img src="/img/luce_6.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce_6.jpeg" title="Image 6"><img src="/img/luce_6.jpeg"></a>
+	</li>
+</ul>
+
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+  </script>
