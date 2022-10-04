@@ -1,125 +1,191 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
-<link href="/css/gallery/slider.style.css" rel="stylesheet">
-	<div class="wrap">
-		<center><h1>Галерея: фото- и видеоматериалы</h1></center>
-		<div class="gallery" data-setting="setup1">
-			<div class="slider">
-				<div class="stage">
-					<div>
-						<img src="images/img_01.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_02.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_03.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_04.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_05.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_06.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_07.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_08.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_09.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_10.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_11.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_12.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_13.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_14.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_15.jpg" alt="">
-					</div>
-					<div>
-						<img src="images/img_16.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<br>
-			<center>Прокрутка:</center>
-			<br>
-			<div class="control">
-				<div class="nav-ctrl" data-hidden="true">
-					<span class="prev" data-shift="prev">Далее</span>
-					<span class="next" data-shift="next">Назад</span>
-				</div>
-				<ul class="dots-ctrl" data-hidden="true"></ul>
-			</div>
-		</div>
-	</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
-	<script type="text/javascript">
-		const setting = {
-			setup1: {
-				// включаем постраничную навигацию
-				dots: true,
-				// включаем управление с клавиатуры клавишами навигации "вправо / влево"
-				keyControl: true,
-				// настройки галереи в зависимости от разрешения
-				adaptive: {
-					// настройка работает в диапазоне разрешений 320-560px
-					320: {
-						// одновременно выводится 1 элемент
-						visibleItems: 1,
-						// расстояние между изображениями 5px
-						margin: 5,
-						// запрещаем постраничную навигацию
-						dots: false
-					},
-					// настройка работает в диапазоне разрешений 560-768px
-					560: {
-						// одновременно выводится 1 элемент
-						visibleItems: 2,
-						// расстояние между изображениями 5px
-						margin: 5,
-						// запрещаем постраничную навигацию
-						dots: false
-					},
-					// настройка работает в диапазоне разрешений 768-1024px
-					768: {
-						// одновременно выводятся 2 элемента
-						visibleItems: 3,
-					},
-					// настройка работает в диапазоне разрешений 1024 и выше
-					1024: {
-						// одновременно выводятся 3 элемента
-						visibleItems: 4
-					}
-				}
-			},
-			setup2: {
-				// одновременно выводится 4 элемента
-				visibleItems: 4,
-				// разрешаем постраничную навигацию
-				dots: true,
-				// разрешаем управление с клавиатуры клавишами навигации "вправо / влево"
-				keyControl: true,
-				// выключаем адаптивность
-				responsive: false
-			}
-		};
-	</script>
-	<script src="/js/gallery/slider.function.js"></script>
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Расположите контейнер с изображением (необходимо расположить стрелки влево и вправо) */
+.container {
+  position: relative;
+}
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+
+/* Добавление указателя при наведении указателя мыши на миниатюры изображений */
+.cursor {
+  cursor: pointer;
+}
+
+/* Вперед и назад кнопки */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Расположите кнопку "вперед" справа */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора мыши добавьте черный цвет фона с небольшим прозрачным слоем */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Номер текста (1/3 и т.д.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Контейнер для текста изображения */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Шесть колонн бок о бок */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Добавьте эффект прозрачности для миниатюрных изображений */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+<h1 style="text-align:center">Галерея слайд-шоу</h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/img_01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/img_02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/img_03.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/img_04.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/img_05.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/img_06.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Горы и фьорды">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Северное сияние">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Природа и восход солнца">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Заснеженные горы">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
