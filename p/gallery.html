@@ -1,2 +1,125 @@
-<center><h1>Галерея: фото и видео материалы</h1></center>
-Данный раздел сайта находится в разработке и временно недоступен
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+<link href="/css/gallery/slider.style.css" rel="stylesheet">
+	<div class="wrap">
+		<center><h1>Галерея: фото- и видеоматериалы</h1></center>
+		<div class="gallery" data-setting="setup1">
+			<div class="slider">
+				<div class="stage">
+					<div>
+						<img src="images/img_01.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_02.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_03.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_04.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_05.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_06.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_07.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_08.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_09.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_10.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_11.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_12.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_13.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_14.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_15.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/img_16.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<br>
+			<center>Прокрутка:</center>
+			<br>
+			<div class="control">
+				<div class="nav-ctrl" data-hidden="true">
+					<span class="prev" data-shift="prev">Далее</span>
+					<span class="next" data-shift="next">Назад</span>
+				</div>
+				<ul class="dots-ctrl" data-hidden="true"></ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		const setting = {
+			setup1: {
+				// включаем постраничную навигацию
+				dots: true,
+				// включаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// настройки галереи в зависимости от разрешения
+				adaptive: {
+					// настройка работает в диапазоне разрешений 320-560px
+					320: {
+						// одновременно выводится 1 элемент
+						visibleItems: 1,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 560-768px
+					560: {
+						// одновременно выводится 1 элемент
+						visibleItems: 2,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 768-1024px
+					768: {
+						// одновременно выводятся 2 элемента
+						visibleItems: 3,
+					},
+					// настройка работает в диапазоне разрешений 1024 и выше
+					1024: {
+						// одновременно выводятся 3 элемента
+						visibleItems: 4
+					}
+				}
+			},
+			setup2: {
+				// одновременно выводится 4 элемента
+				visibleItems: 4,
+				// разрешаем постраничную навигацию
+				dots: true,
+				// разрешаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// выключаем адаптивность
+				responsive: false
+			}
+		};
+	</script>
+	<script src="/js/gallery/slider.function.js"></script>
