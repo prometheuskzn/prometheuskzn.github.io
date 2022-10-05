@@ -26,31 +26,25 @@
 	В комментариях к переводу можете указать свои пожелания<br>
 </div>
 <br>
+<br>
+<center><h2>Форма автоматического перевода</h2></center>
 <div class="shop-block-filter page-block page-block_aside col-12 d-none d-lg-block">
 	<div class="shop-block-filter__box">
 		<form class="shop-filter form" method="GET" action="/shop/">
-			<input type="hidden" name="module" value="shop">
-			<input type="hidden" name="action" value="search">
-			<input name="cat_id" type="hidden" value="0">
 			<div class="control">
 				<label class="label">Сумма</label>
 				<input class="input" name="summ" value="500" type="text">
 			</div>
 			<div class="control">
 				<label class="label">Комментарий</label>
-				<input class="input" name="summ" placeholder="Его увидит команда фонда" type="text">
-			</div>
-			<div class="shop-filter__control-group control-group">
-				<div class="control control_checkbox">
-					<input name="ac" value="1" id="shop_filter_input_action" type="checkbox">
-					<label class="label" for="shop_filter_input_action">Выслать чек на электронную почту</label>
-				</div>
+				<input class="input" name="comment" placeholder="Его увидит команда фонда" type="text">
 			</div>
 			<div class="control">
 				<label class="label">Адрес электронной почты</label>
-				<input class="input" name="summ" placeholder="Формат: address@maildomain.ru" type="text">
+				<input class="input" name="email" placeholder="Формат: address@maildomain.ru" type="email">
 			</div>
-			<button class="button" type="submit">Перейти к подтверждению оплаты</button>
+			<button class="button" type="submit">Перейти к выбору способа оплаты</button>
 		</form>
 	</div>
 </div>
+<script src="/js/donate_form.js">
