@@ -1,7 +1,8 @@
 
 function freekassa_go (){
 	var formData = {};
-	formData['sum'] = $('.freekassa > [name=sum]').val();
+	formData['sum'] = $('.control > [name=summ]').val();
+	formData['email'] = $('.control > [name=email]').val();
 	$.ajax({
 		type: 'POST',
 		url: 'https://donate.prometheuskzn.ru/',
