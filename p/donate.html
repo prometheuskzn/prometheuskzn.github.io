@@ -25,3 +25,138 @@
 	<br>
 	В комментариях к переводу можете указать свои пожелания
 </div>
+
+<div class="shop-block-filter page-block page-block_aside col-12 d-none d-lg-block">
+			<div class="shop-block-filter__box">
+				<form class="shop-filter form" method="GET" action="/shop/">
+					<input type="hidden" name="module" value="shop">
+					<input type="hidden" name="action" value="search">
+					<input name="cat_id" type="hidden" value="0">
+					<div class="control">
+						<label class="label">Артикул</label>
+						<input class="input" name="a" value="" type="text">
+					</div>
+					<div class="control">
+						<label class="label">Цена</label>
+						<div class="shop-filter__range">
+							<input class="input" name="pr1" value="0" type="text"><span>—</span>
+							<input class="input" name="pr2" value="0" type="text">
+						</div>
+					</div>
+					<div class="shop-filter__control-group control-group">
+						<div class="control control_checkbox">
+							<input name="ac" value="1" id="shop_filter_input_action" type="checkbox">
+							<label class="label" for="shop_filter_input_action">Товар по акции</label>
+					</div>
+					<div class="control control_checkbox">
+						<input name="ne" value="1" id="shop_filter_input_new" type="checkbox">
+						<label class="label" for="shop_filter_input_new">Новинка</label>
+					</div>
+											<div class="control control_checkbox">
+												<input name="hi" value="1" id="shop_filter_input_hit" type="checkbox">
+												<label class="label" for="shop_filter_input_hit">Хит</label>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Производитель</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="brand[]" value="1" id="shop_filter_input_1" type="checkbox">
+													<label class="label" for="shop_filter_input_1">TAC</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="2" id="shop_filter_input_2" type="checkbox">
+													<label class="label" for="shop_filter_input_2">Блакiт</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="3" id="shop_filter_input_3" type="checkbox">
+													<label class="label" for="shop_filter_input_3">Mona Liza</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="4" id="shop_filter_input_4" type="checkbox">
+													<label class="label" for="shop_filter_input_4">Asabella</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="5" id="shop_filter_input_5" type="checkbox">
+													<label class="label" for="shop_filter_input_5">Сайлид</label>
+												</div>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Материал</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="p1[]" value="54" id="shop_filter_input_p1_54" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_54">Сатин</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="55" id="shop_filter_input_p1_55" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_55">Шелк</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="56" id="shop_filter_input_p1_56" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_56">Бамбук</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="58" id="shop_filter_input_p1_58" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_58">Лен</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="59" id="shop_filter_input_p1_59" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_59">Жаккард</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="60" id="shop_filter_input_p1_60" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_60">Микрофибра</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="61" id="shop_filter_input_p1_61" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_61">Хлопок</label>
+												</div>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Цвет</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="p2[]" value="1" id="shop_filter_input_p2_1" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_1">Белый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="2" id="shop_filter_input_p2_2" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_2">Синий</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="3" id="shop_filter_input_p2_3" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_3">Зеленый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="10" id="shop_filter_input_p2_10" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_10">Голубой</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="12" id="shop_filter_input_p2_12" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_12">Фисташковый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="19" id="shop_filter_input_p2_19" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_19">Желтый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="38" id="shop_filter_input_p2_38" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_38">Бордовый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="47" id="shop_filter_input_p2_47" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_47">Красный</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="57" id="shop_filter_input_p2_57" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_57">Лиловый</label>
+												</div>
+											</div>
+										</div>
+										<button class="button" type="submit">Подобрать</button>
+									</form>
+								</div>
+		</div>
