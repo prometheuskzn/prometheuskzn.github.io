@@ -1,5 +1,5 @@
 
-function freekassa_go (){
+function freekassa_go(){
 	var formData = {};
 	formData['sum'] = $('.control > [name=summ]').val();
 	formData['email'] = $('.control > [name=email]').val();
