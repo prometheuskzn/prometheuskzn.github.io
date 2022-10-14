@@ -35,14 +35,18 @@
         </div>
     </div>
 	<script>
-	if(getUrlParameter('p') !== false && getUrlParameter('p') != 'menu' && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null){
+	if(getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null)
+	{
 		file_url = getUrlParameter('p');
-	}else{
-		file_url = 'main';
 	}
-	$('.main_main > include').attr('src', './p/'+file_url+'.html');
+	else
+	{
+		file_url = 'index';
+	}
+	$('main.p__content > include').attr('src', './p/'+file_url+'.html');
 	</script>
 	<script src="js/include.js"></script>
+	
 	
 	<!--LiveInternet counter-->
 	<script>
