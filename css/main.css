@@ -1,3 +1,25 @@
+.main_block_top > h1 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_top > h2 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .main_block_top > h3 {
     font-family: 'Eternal Logo';
     font-style: normal;
