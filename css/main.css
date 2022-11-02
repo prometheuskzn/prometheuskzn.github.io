@@ -1,0 +1,159 @@
+.main_block_top > h1 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_top > h2 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_top > h3 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_top > p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.main_block_top {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.main_block_body {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.main_block_history {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main_block_history > h4 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_history-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.main_block_history-item {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.main_block_history-item > h4 {
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_history-item > p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.main_block_installation, .main_block_biogr {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.main_block_biogr_i1 {display: flex;flex-direction: column;gap: 10px;}
+
+.main_block_biogr_i1 > img {
+    width: 247px;
+    height: 376px;
+}
+
+.main_block_biogr_i2 > p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_biogr_i1 > span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main_block_installation_i1 img {
+    width: 556px;
+    height: 344px;
+}
+
+.main_block_installation_i2 p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+}

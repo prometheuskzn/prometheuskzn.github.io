@@ -1,0 +1,132 @@
+@media (max-width: 1540px) {
+	.main_block_installation, .main_block_biogr {
+		flex-direction: column!important;
+		align-items: center!important;
+	}
+
+	.main_block_biogr {
+		border-bottom: 2px dashed!important;
+	}
+
+	.main_block_history-list {
+		flex-direction: column!important;
+		align-items: center!important;
+	}
+
+	.main_block_history-item {
+		align-items: center!important;
+	}
+
+	.main_block_history > h4 {
+		text-align: center!important;
+	}
+
+	.main_block_top {
+		align-items: center!important;
+	}
+
+	.main_block_top > h3 {
+		text-align: center!important;
+	}
+
+	.main_block_top > p {
+		text-align: center!important;
+	}
+}
+@media (max-width: 1400px) {
+	.head_header .flex1 > .item4 {
+		display: none!important;
+	}
+
+	.block20.layout {
+		display: none!important;
+	}
+	.bar_btn_head {
+		display: flex!important;
+		align-items: center!important;
+		justify-content: center!important;
+	}
+	
+	.bar_btn_head button {
+		cursor: pointer;
+		border: 0;
+		background: transparent;
+		color: #fff;
+		font-size: 25px;
+		outline: none;
+	}
+
+	.flex1.layout4 {
+		flex-direction: column!important;
+	}
+
+	.block18.layout {
+		align-items: center!important;
+	}
+
+	.flex1.layout9 {
+		flex-direction: column!important;
+		gap: 17px!important;
+	}
+
+	.flex1 > .item17, .flex1 > .item19, .flex1 > .item13 {
+		flex: none!important;
+	}
+
+	.flex.layout5 {
+		align-items: center!important;
+	}
+
+	.image.layout {
+		margin: 0!important;
+	}
+
+	.flex1.layout6 {
+		gap: 20px!important;
+	}
+
+	.flex.layout6 {
+		display: flex!important;
+		align-items: center!important;
+	}
+}
+@media (max-width: 1200px) {
+	.head_header .flex1 > .item3 {
+		display: none!important;
+	}
+}
+@media (max-width: 800px) {
+	.flex1 > .item5 {
+		display: none!important;
+	}
+
+	.main_block_installation_i1 img {
+		width: 100%!important;
+		height: auto!important;
+	}
+}
+@media (max-width: 600px) {
+	.main_block_top > h3 {
+		font-size: 20px!important;
+	}
+
+	.main_block_history > h4 {
+		font-size: 20px!important;
+	}
+
+	.main_block_history-item > h4 {
+		font-size: 18px!important;
+	}
+}
+@media (max-width: 450px) {
+	.flex1.layout5 {
+		flex-direction: column!important;
+		gap: 20px!important;
+	}
+
+	.flex1 > .item14,
+	.flex1 > .item15,
+	.flex1 > .item16 {
+		flex: none!important;
+	}
+}
