@@ -1,0 +1,71 @@
+<center><h1>Выставка "Андеграунд на свету"</h1></center>
+<center>Проводилась с 6 апреля по 24 июня 2022 года</center><br>
+<hr>
+<br>
+<p>
+<img src="/img/underground/underground_poster.png" width="50%" alt="Афиша" align="left" vspace="5" hspace="20">
+В рамках "Лаборатории междисциплинарных практик на базе архива Фонда «‎Галеев-Прометей»" были представлены материалы, касающиеся возникновения Скрябинской идеи "Поэмы огня" и его световой строки,
+а также объекты и видеоматериалы художественных экспериментов коллектива "Прометей" по реализации светомузыкальных замыслов А.Н.Скрябина.
+Выставку посетило свыше 200 человек. Подготовленные материалы планируется экспонировать на московской выставке, посвященной юбилею великого композитора.
+<br>
+<br>
+<center>
+	<ul class="news-block__item">
+		<li class="articles-block__item"><a class="news-block__link" href="https://inde.io/news/53364-v-tsentre-prometey-otkrylas-vystavka-andegraund-na-svetu" target="_blank"><b>Статья на ИНДЕ</b></a><br></li>
+	</ul>
+</center>
+<br>
+<center>
+	<ul class="news-block__item">
+		<li class="articles-block__item"><a class="news-block__link" href="https://e-kazan.ru/news/show/48760" target="_blank"><b>Статья на e-Kazan</b></a><br></li>
+	</ul>
+</center>
+</p>
+<link rel="stylesheet" href="/css/gallery.css">
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<ul id="thumbs">
+	<li>
+		<a href="/img/underground/1.jpeg" title="Image 1"><img src="/img/underground/1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/underground/2.jpeg" title="Image 2"><img src="/img/underground/2.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/underground/3.jpeg" title="Image 3"><img src="/img/underground/3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/underground/4.jpeg" title="Image 4"><img src="/img/underground/4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/underground/5.jpeg" title="Image 5"><img src="/img/underground/5.jpeg"></a>
+	</li>
+</ul>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<center><p><img id="largeImg" src="/img/underground/1.jpeg" alt="UnderGround"></p></center>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+</script>

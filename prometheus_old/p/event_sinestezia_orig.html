@@ -1,0 +1,71 @@
+<center><h1>Выставка "Синестезия. Лаборатория по исследованию феномена"</h1></center>
+<center>Проводилась с 30 июня по 15 августа 2022 года</center><br>
+<hr>
+<br>
+<p>
+<img src="/img/sinestezia.jpeg" width="50%" alt="Синестезия" align="left" vspace="5" hspace="20">
+Новая визуальная культура существенно изменили чувственное восприятие мира.
+На этой выставке мы попытались на современном этапе продолжить проходившие в Казани исследования и подробнее проанализировать межчувственные связи.
+Посетители нашей лаборатории погружались в необычную атмосферу исследования себя, своих ощущений и получали новый  опыт восприятия.
+<br>
+<br>
+<center>
+	<ul class="news-block__item">
+		<li class="articles-block__item"><a class="news-block__link" href="http://synesthesia.prometheus.tilda.ws/" target="_blank"><b>Открыть сайт синестезии</b></a><br></li>
+	</ul>
+</center>
+</p>
+<link rel="stylesheet" href="/css/gallery.css">
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<ul id="thumbs">
+	<li>
+		<a href="/img/luce/luce_1.jpeg" title="Image 1"><img src="/img/luce/luce_1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_2.jpeg" title="Image 2"><img src="/img/luce/luce_3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_3.jpeg" title="Image 3"><img src="/img/luce/luce_4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_4.jpeg" title="Image 4"><img src="/img/luce/luce_5.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_5.jpeg" title="Image 5"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_6.jpeg" title="Image 6"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+</ul>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<center><p><img id="largeImg" src="/img/luce/luce_1.jpeg" alt="Luce"></p></center>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+</script>

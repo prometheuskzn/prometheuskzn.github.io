@@ -1,0 +1,187 @@
+<center><h1>Выставка "Синестезия. Лаборатория по исследованию феномена"</h1></center>
+<center>Проводилась с 30 июня по 15 августа 2022 года</center><br>
+<hr>
+<br>
+<p>
+	<img src="/img/sinestezia.jpeg" width="50%" alt="Синестезия" align="left" vspace="5" hspace="20">
+	<div class="mySlides">
+		<img src="/img/sinestezia.jpeg" style="width:100%">
+	</div>
+Новая визуальная культура существенно изменили чувственное восприятие мира.
+На этой выставке мы попытались на современном этапе продолжить проходившие в Казани исследования и подробнее проанализировать межчувственные связи.
+Посетители нашей лаборатории погружались в необычную атмосферу исследования себя, своих ощущений и получали новый  опыт восприятия.
+<br>
+<br>
+<center>
+	<ul class="news-block__item">
+		<li class="articles-block__item"><a class="news-block__link" href="http://synesthesia.prometheus.tilda.ws/" target="_blank"><b>Открыть сайт синестезии</b></a><br></li>
+	</ul>
+</center>
+</p>
+<link rel="stylesheet" href="/css/gallery.css">
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<ul id="thumbs">
+	<li>
+		<a href="/img/luce/luce_1.jpeg" onclick="currentSlide(1)" title="Плакат"><img src="/img/sinestezia.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_1.jpeg" onclick="currentSlide(2)" title="Image 1"><img src="/img/luce/luce_1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_2.jpeg" onclick="currentSlide(3)" title="Image 2"><img src="/img/luce/luce_3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_3.jpeg" onclick="currentSlide(4)" title="Image 3"><img src="/img/luce/luce_4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_4.jpeg" onclick="currentSlide(5)" title="Image 4"><img src="/img/luce/luce_5.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_5.jpeg" onclick="currentSlide(6)" title="Image 5"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_6.jpeg" onclick="currentSlide(7)" title="Image 6"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+</ul>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Расположите контейнер с изображением (необходимо расположить стрелки влево и вправо) */
+.container {
+  position: relative;
+}
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+
+/* Добавление указателя при наведении указателя мыши на миниатюры изображений */
+.cursor {
+  cursor: pointer;
+}
+
+/* Вперед и назад кнопки */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Расположите кнопку "вперед" справа */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора мыши добавьте черный цвет фона с небольшим прозрачным слоем */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Номер фото слева сверху (1/3 и т.д.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Контейнер для текста изображения */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Шесть колонн бок о бок */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Добавьте эффект прозрачности для миниатюрных изображений */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>

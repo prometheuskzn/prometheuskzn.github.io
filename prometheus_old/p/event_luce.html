@@ -1,0 +1,47 @@
+<center><h1>Выставка "Видимая музыка Скрябина. Эксперименты казанских светомузыкантов"</h1></center>
+<center>Была проведена с 30 января по 30 марта 2022 года.</center><br>
+<hr>
+<br>
+<p>
+<img src="/img/luce/luce_0.jpeg" width="50%" alt="Люче" align="left" vspace="5" hspace="20">
+В рамках "Лаборатории междисциплинарных практик на базе архива Фонда "Галеев-Прометей" были представлены материалы, касающиеся возникновения Скрябинской идеи "Поэмы огня" и его световой строки,
+а также объекты и видеоматериалы художественных экспериментов коллектива "Прометей" по реализации светомузыкальных замыслов А.Н.Скрябина.
+Выставку посетило свыше 200 человек. Подготовленные материалы планируется экспонировать на московской выставке, посвященной юбилею великого композитора.
+</p>
+
+<link rel="stylesheet" href="/css/gallery.css">
+<ul id="thumbs">
+	<li>
+		<a href="/img/luce/luce_1.jpeg" title="Image 1"><img src="/img/luce/luce_1.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_2.jpeg" title="Image 2"><img src="/img/luce/luce_3.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_3.jpeg" title="Image 3"><img src="/img/luce/luce_4.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_4.jpeg" title="Image 4"><img src="/img/luce/luce_5.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_5.jpeg" title="Image 5"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+	<li>
+		<a href="/img/luce/luce_6.jpeg" title="Image 6"><img src="/img/luce/luce_6.jpeg"></a>
+	</li>
+</ul>
+<p><img id="largeImg" src="/img/luce/luce_1.jpeg" alt="Luce"></p>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+</script>

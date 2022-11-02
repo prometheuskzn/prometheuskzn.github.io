@@ -1,0 +1,238 @@
+<aside class="page__aside col-12 col-lg-3 order-lg-first">
+    <div clasQs="row d-block d-md-flex d-lg-block">
+        <!-- Главное меню -->
+        <!--<div class="shop-block-compare page-block page-block_aside col-12 col-md-6 offset-md-6 order-md-3 col-lg-12 offset-lg-0">
+			<div class="shop-block-compare__box">
+				<a class="interactive-link" href="#"><i class="interactive-link__icon fas fa-tasks"></i><span class="interactive-link__title">Кнопка 1</span><span class="interactive-link__counter in-compare"></span></a>
+			</div>
+			<div class="shop-block-compare__box">
+				<a class="interactive-link" href="#"><i class="fa-solid fa-book"></i><span class="interactive-link__title">Кнопка 2</span><span class="interactive-link__counter in-compare"></span></a>
+			</div>
+		</div>-->
+        <div class="news-block page-block page-block_aside col-12 col-md-6 order-md-2 col-lg-12">
+            <div class="h3"><center>Последние события</center></div>
+            <ul class="news-block__list">
+				<li class="news-block__item">
+                    <a class="news-block__link" href="http://art-hackathon.tilda.ws/" target="_blank">АРТ-Хакатон</a>
+                    <div class="news-block__date">1 - 19 сентября</div>
+                </li>
+                <li class="news-block__item">
+                    <a class="news-block__link" href="/?p=event_sinestezia">Выставка "Синестезия. Лаборатория по исследованию феномена"</a>
+                    <div class="news-block__date">30 июня - 15 августа</div>
+                </li>
+				<li class="news-block__item">
+                    <a class="news-block__link" href="/?p=event_underground">Выставка "Андеграунд на свету"</a>
+                    <div class="news-block__date">6 апреля - 24 июня</div>
+                </li>
+                <li class="news-block__item">
+                    <a class="news-block__link" href="/?p=event_luce">Выставка "Видимая музыка Скрябина. Эксперименты казанских светомузыкантов"</a>
+                    <div class="news-block__date">30 января - 30 марта</div>
+                </li>
+				<li class="news-block__item"><a class="news-block__link" href="/?p=news"><center>Перейти к новостям</center></a></li>
+            </ul>
+        </div>
+
+        <div class="articles-block page-block page-block_aside col-12 col-md-6 order-md-1 col-lg-12">
+            <div class="h3"><center>Ближайшие мероприятия</center></div>
+            <ul class="articles-block__list">
+                <!--<li class="articles-block__item">
+                    <a class="articles-block__image" href="http://art-hackathon.tilda.ws/" style="background-image: url(/img/art-hackathon.png);" title="АРТ-Хакатон" target="_blank"></a>
+                    <div class="articles-block__content">
+                        <a class="articles-block__link" href="http://art-hackathon.tilda.ws/" target="_blank">АРТ-Хакатон</a>
+                        <div class="articles-block__date">до 19 сентября 2022 г.</div>
+                    </div>
+                </li>-->
+                <li class="articles-block__item">
+                    <a class="articles-block__image" href="/?p=event_results_sinestezia" style="background-image: url(/img/sinestezia_logo.png);" title="Выставка"></a>
+                    <div class="articles-block__content">
+                        <a class="articles-block__link" href="/?p=event_results_sinestezia">Выставка "Итоги лаборатории по синестезии"</a>
+                        <div class="articles-block__date">22 сентября - 22 октября</div>
+                    </div>
+                </li>
+				<li class="articles-block__item"><a class="news-block__link" href="/?p=events"><center>Показать все<br></center></a></li>
+            </ul>
+        </div>
+
+        <!--<nav class="shop-block-navigation navigation navigation_vertical page-block page-block_aside col-12 d-none d-lg-block">
+            <div class="h3"><center>Главное меню</center></div>
+            <div class="shop-block-navigation__box">
+                <ul class="navigation__list navigation__list_main">
+                    <br><li class="navigation__item navigation__item_child"><a href="/">Главная</a></li>
+                    <li class="navigation__item navigation__item_main navigation__item_parent">
+                        <a href="#">Прочее<i class="fas fa-plus-circle"></i></a>
+                        <ul class="navigation__list navigation__list_child">
+                            <li class="navigation__item navigation__item_child"><a href="/?p=soon">Поддержать проект</a></li>
+                            <li class="navigation__item navigation__item_child"><a href="/?p=soon">Предложить идею</a></li>
+                            <li class="navigation__item navigation__item_child"><a href="/?p=soon">Документы</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>-->
+
+        <!-- Фильтр/сортировка -->
+        <!--<div class="shop-block-filter page-block page-block_aside col-12 d-none d-lg-block">
+			<div class="shop-block-filter__box">
+				<form class="shop-filter form" method="GET" action="/shop/">
+					<input type="hidden" name="module" value="shop">
+					<input type="hidden" name="action" value="search">
+					<input name="cat_id" type="hidden" value="0">
+					<div class="control">
+						<label class="label">Артикул</label>
+						<input class="input" name="a" value="" type="text">
+					</div>
+					<div class="control">
+						<label class="label">Цена</label>
+						<div class="shop-filter__range">
+							<input class="input" name="pr1" value="0" type="text"><span>—</span>
+							<input class="input" name="pr2" value="0" type="text">
+						</div>
+					</div>
+					<div class="shop-filter__control-group control-group">
+						<div class="control control_checkbox">
+							<input name="ac" value="1" id="shop_filter_input_action" type="checkbox">
+							<label class="label" for="shop_filter_input_action">Товар по акции</label>
+					</div>
+					<div class="control control_checkbox">
+						<input name="ne" value="1" id="shop_filter_input_new" type="checkbox">
+						<label class="label" for="shop_filter_input_new">Новинка</label>
+					</div>
+											<div class="control control_checkbox">
+												<input name="hi" value="1" id="shop_filter_input_hit" type="checkbox">
+												<label class="label" for="shop_filter_input_hit">Хит</label>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Производитель</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="brand[]" value="1" id="shop_filter_input_1" type="checkbox">
+													<label class="label" for="shop_filter_input_1">TAC</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="2" id="shop_filter_input_2" type="checkbox">
+													<label class="label" for="shop_filter_input_2">Блакiт</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="3" id="shop_filter_input_3" type="checkbox">
+													<label class="label" for="shop_filter_input_3">Mona Liza</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="4" id="shop_filter_input_4" type="checkbox">
+													<label class="label" for="shop_filter_input_4">Asabella</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="brand[]" value="5" id="shop_filter_input_5" type="checkbox">
+													<label class="label" for="shop_filter_input_5">Сайлид</label>
+												</div>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Материал</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="p1[]" value="54" id="shop_filter_input_p1_54" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_54">Сатин</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="55" id="shop_filter_input_p1_55" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_55">Шелк</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="56" id="shop_filter_input_p1_56" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_56">Бамбук</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="58" id="shop_filter_input_p1_58" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_58">Лен</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="59" id="shop_filter_input_p1_59" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_59">Жаккард</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="60" id="shop_filter_input_p1_60" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_60">Микрофибра</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p1[]" value="61" id="shop_filter_input_p1_61" type="checkbox">
+													<label class="label" for="shop_filter_input_p1_61">Хлопок</label>
+												</div>
+											</div>
+										</div>
+										<div class="shop-filter__control-group control-group">
+											<label class="control-group__label">Цвет</label>
+											<div class="roll">
+												<div class="control control_checkbox">
+													<input name="p2[]" value="1" id="shop_filter_input_p2_1" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_1">Белый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="2" id="shop_filter_input_p2_2" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_2">Синий</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="3" id="shop_filter_input_p2_3" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_3">Зеленый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="10" id="shop_filter_input_p2_10" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_10">Голубой</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="12" id="shop_filter_input_p2_12" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_12">Фисташковый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="19" id="shop_filter_input_p2_19" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_19">Желтый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="38" id="shop_filter_input_p2_38" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_38">Бордовый</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="47" id="shop_filter_input_p2_47" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_47">Красный</label>
+												</div>
+												<div class="control control_checkbox">
+													<input name="p2[]" value="57" id="shop_filter_input_p2_57" type="checkbox">
+													<label class="label" for="shop_filter_input_p2_57">Лиловый</label>
+												</div>
+											</div>
+										</div>
+										<button class="button" type="submit">Подобрать</button>
+									</form>
+								</div>
+		</div>-->
+
+        <div class="subscription-block page-block page-block_aside col-12 order-md-last text-sm-center text-lg-left">
+            <div class="subscription-block__box" style="background-image: url(https://raw.githubusercontent.com/prometheuskzn/prometheuskzn.github.io/main/userfls/bs/subscription_7_7.jpg);">
+                <div class="subscription-block__content">
+                    <div class="subscription-block__text">
+                        <p>Подпишитесь на новости проекта и будьте в курсе последних событий!</p>
+                    </div>
+                    <form method="POST" enctype="multipart/form-data" action="/" class="form ajax">
+                        <input type="hidden" name="module" value="subscription" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="form_tag" value="subscriptionc4ca4238a0b923820dcc509a6f75849b" />
+                        <div class="d-sm-flex d-lg-block justify-content-sm-center">
+                            <div class="control">
+                                <input class="input" name="mail" type="email" placeholder="Электронная почта" />
+                                <div class="errors error_mail" style="display: none;"></div>
+                            </div>
+                            <button class="button" type="submit" title="Подписаться">Подписаться</button>
+                        </div>
+                        <div class="privacy">Отправляя форму, Вы даёте согласие на <a href="?p=soon">обработку персональных данных</a>.</div>
+                        <div class="errors error" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="shop-block-compare page-block page-block_aside col-12 col-md-6 offset-md-6 order-md-3 col-lg-12 offset-lg-0">
+			<div class="shop-block-compare__box">
+				<a class="interactive-link" href="http://prometheus.kai.ru/" target="_blank"><i class="fa-duotone fa-scroll-old"></i>&nbsp;&nbsp;<span class="interactive-link__title">Старая версия сайта</span><span class="interactive-link__counter in-compare"></span></a>
+			</div>
+		</div>
+    </div>
+</aside>
