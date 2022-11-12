@@ -1,3 +1,27 @@
+<div class="mobile_menu">
+	<hmenu>
+		<div class="hmenu_logo">
+				<img src="./image/564b940d5c2236339bf6043d5a777395.png" alt="" class="hmenu_logo_ico" />
+				<img src="./image/ce5f9696614828e11b175536a46caa46.png" alt="" class="hmenu_logo_text" />
+		</div>
+		<div class="bar_btn_hhmenu">
+			<button onclick="open_menu_mobile('0')"><i class="fa-solid fa-close"></i></button>
+		</div>
+	</hmenu>
+	<bmenu>
+		<a href="">Главная</a>
+		<a href="">Мероприятия</a>
+		<a href="">Статьи</a>
+		<a href="">Фильмы</a>
+		<a href="">Архив</a>
+		<a href="">Галерея</a>
+		<a href="">Буккроссинг</a>
+		<a href="">Контакты</a>
+	</bmenu>
+	<fmenu>
+		<a href="">Поддержать проект</a>
+	</fmenu>
+</div>
 <div class="flex layout">
 	<div class="flex1 layout1">
 		<div class="item">
@@ -27,6 +51,9 @@
 				<h4 class="highlights3 layout">Поддержать проект</h4>
 			</a>
 		</div>
+		<div class="bar_btn_head">
+			<button onclick="open_menu_mobile('1')"><i class="fa-solid fa-bars"></i></button>
+		</div>
 	</div>
 	<div class="block20 layout">
 		<div class="flex1 layout2">
@@ -54,3 +81,12 @@
 		</div>
 	</div>
 </div>
+<script>
+function open_menu_mobile(status){
+	if(status == '1'){
+		$('.mobile_menu').css('left', '0%');
+	}else{
+		$('.mobile_menu').css('left', '-100%');
+	}
+}
+</script>
