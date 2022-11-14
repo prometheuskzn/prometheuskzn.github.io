@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Прометей</title></title>
+	<title>Прометей</title>
+	</title>
 	<meta name="description" content="">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" href="./css/media.css" />
-		<script src="js/jquery.js"></script>
-		<script src="js/index.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
 </head>
 
 <body style="display: flex; flex-direction: column">
-    <div class="prometheuskzn root layout">
-        <div class="flex layout8">
+	<div class="prometheuskzn root layout">
+		<div class="flex layout8">
 			<div class="head_header">
 				<include src="./header.html"></include>
-            </div>
-            <div class="flex1 layout4">
-                <div class="item8 ">
-                    <include src="./menu.html"></include>
-                </div>
-                <div class="item9 main_main">
-                    <include src=""></include>
-                </div>
-            </div>
-            <div class="flex layout7">
+			</div>
+			<div class="flex1 layout4">
+				<div class="item8 ">
+					<include src="./menu.html"></include>
+				</div>
+				<div class="item9 main_main">
+					<include src=""></include>
+				</div>
+			</div>
+			<div class="flex layout7">
 				<include src="./footer.html"></include>
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 	<script>
-	if(getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null)
-	{
-		file_url = getUrlParameter('p');
-	}
-	else
-	{
-		file_url = 'index';
-	}
-	$('.main_main > include').attr('src', './p/'+file_url+'.html');
+		if (getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null) {
+			file_url = getUrlParameter('p');
+		}
+		else {
+			file_url = 'index';
+		}
+		$('.main_main > include').attr('src', './p/' + file_url + '.html');
 	</script>
 	<script src="js/include.js"></script>
-	
-	
+
+
 	<!--LiveInternet counter-->
 	<script>
-	(function(d,s){d.getElementById("licnt0C95").src="https://counter.yadro.ru/hit?t44.11;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)
+		(function (d, s) { d.getElementById("licnt0C95").src = "https://counter.yadro.ru/hit?t44.11;r" + escape(d.referrer) + ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" + (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) + ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random() })(document, screen)
 	</script>
 	<!--/LiveInternet-->
-		
+
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-	   m[i].l=1*new Date();
-	   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-	   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-		   ym(90494860, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-	   });
+	<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+				m[i].l = 1 * new Date();
+				for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+				k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+			})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(90494860, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/90494860" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/90494860" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
 	<!-- /Yandex.Metrika counter -->
 </body>
+
+
 
 </html>

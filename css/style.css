@@ -1164,6 +1164,7 @@ a {
 }
 
 .main_main {
+    
     color: #fff;
 }
 
@@ -1260,4 +1261,22 @@ img.hmenu_logo_text {
     color: #fff;
     font-size: 25px;
     outline: none;
+}
+h3{
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.layout-font{
+    font-family: 'Eternal Logo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
