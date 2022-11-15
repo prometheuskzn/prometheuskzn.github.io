@@ -7,59 +7,72 @@
 
 <body>
   <h3>Фото разработок СКБ "Прометей"</h3>
-  <div class="container" id="lightgallery">
-    <a href="../img/gallery/5a.jpg" class="vertical">
+  <div id="fb-root"></div>
+  <div class="container gallery-captions-demo" id="lightgallery">
+    <a href="../img/gallery/5a.jpg" class="vertical" data-sub-html="<h4>Установка «Малиновый звон» (1967)</h4>">
       <img src="../img/gallery/5a.jpg" />
     </a>
-    <a href="../img/gallery/6a.jpg" class="">
+    <a href="../img/gallery/6a.jpg" class=""
+      data-sub-html="<h4>Светодинамическая подсветка Казанского цирка (1968)</h4>">
       <img src="../img/gallery/6a.jpg" />
     </a>
-    <a href="../img/gallery/8c.jpg" class="big">
+    <a href="../img/gallery/8c.jpg" class="big"
+      data-sub-html="<h4>Проекционно-растровый индикатор состояния «человек-машина» (1972)</h4>">
       <img src="../img/gallery/8c.jpg" />
     </a>
-    <a href="../img/gallery/13a.jpg" class="horizontal">
+    <a href="../img/gallery/13a.jpg" class="horizontal"
+      data-sub-html="<h4>Светомузыкальная установка «Ялкын 1» и «Ялкын 2» (1974)</h4>">
       <img src="../img/gallery/13a.jpg" />
     </a>
-    <a href="../img/gallery/13b.jpg" class="">
+    <a href="../img/gallery/13b.jpg" class=""
+      data-sub-html="<h4>Светомузыкальная установка «Ялкын 1» и «Ялкын 2» (1974)</h4>">
       <img src="../img/gallery/13b.jpg" />
     </a>
-    <a href="../img/gallery/17a.jpg" class="horizontal">
+    <a href="../img/gallery/17a.jpg" class="horizontal"
+      data-sub-html="<h4>Музей светомузыки в Казанском молодежном центре (1976-1991)</h4>">
       <img src="../img/gallery/17a.jpg" />
     </a>
-    <a href="../img/gallery/17b.jpg" class="">
+    <a href="../img/gallery/17b.jpg" class=""
+      data-sub-html="<h4>Демонстрационный зал в музее светомузыки в Казанском молодежном центре</h4>">
       <img src="../img/gallery/17b.jpg" />
     </a>
-    <a href="../img/gallery/19a.jpg" class="">
+    <a href="../img/gallery/19a.jpg" class="" data-sub-html="<h4>Установка «Электронный художник» (1976)</h4>">
       <img src="../img/gallery/19a.jpg" />
     </a>
-    <a href="../img/gallery/21c.jpg" class="big">
+    <a href="../img/gallery/21c.jpg" class="big" data-sub-html="<h4>Установка «Калейдофон-12» (1988)</h4>">
       <img src="../img/gallery/21c.jpg" />
     </a>
-    <a href="../img/gallery/22a.jpg" class="">
+    <a href="../img/gallery/22a.jpg" class="" data-sub-html="<h4>Светомузыкальная установка «Диско» (1985)</h4>">
       <img src="../img/gallery/22a.jpg" />
     </a>
-    <a href="../img/gallery/22b.jpg" class="">
+    <a href="../img/gallery/22b.jpg" class="" data-sub-html="<h4>Светомузыкальная установка «Диско» (1985)</h4>">
       <img src="../img/gallery/22b.jpg" />
     </a>
-    <a href="../img/gallery/25a.jpg" class="">
+    <a href="../img/gallery/25a.jpg" class=""
+      data-sub-html="<h4>Пульт от светомузыкальной системы «Прометей-3» (1990)</h4>">
       <img src="../img/gallery/25a.jpg" />
     </a>
-    <a href="../img/gallery/26d.jpg" class="horizontal">
+    <a href="../img/gallery/26d.jpg" class="horizontal"
+      data-sub-html="<h4>Электронная инсталляция «Светлые головы светлых людей» (коллективный портрет СКБ «Прометей») (1990)</h4>">
       <img src="../img/gallery/26d.jpg" />
     </a>
-    <a href="../img/gallery/26e.jpg" class="vertical">
+    <a href="../img/gallery/26e.jpg" class="vertical"
+      data-sub-html="<h4>Видеоинсталляция «Электронный мальчик на мокрых пеленках» (1991)</h4>">
       <img src="../img/gallery/26e.jpg" />
     </a>
-    <a href="../img/gallery/29a.jpg" class="big">
+    <a href="../img/gallery/29a.jpg" class="big"
+      data-sub-html="<h4>Светоконцерт «Скрябин+Кандинский» к 50-летию Казанской консерватории в Большом концертном зале (1996)</h4>">
       <img src="../img/gallery/29a.jpg" />
     </a>
-    <a href="../img/gallery/198.jpg" class="big">
+    <a href="../img/gallery/198.jpg" class="big"
+      data-sub-html="<h4>Смешанная инсталляция «Собака лает, караван идет» (1991)</h4>">
       <img src="../img/gallery/198.jpg" />
     </a>
-    <a href="../img/gallery/Idel.jpg" class="horizontal">
+    <a href="../img/gallery/Idel.jpg" class="horizontal" data-sub-html="<h4>Установка «Идель» (1971)</h4>">
       <img src="../img/gallery/Idel.jpg" />
     </a>
-    <a href="../img/gallery/Shamail_v_mecheti.jpg" class="">
+    <a href="../img/gallery/Shamail_v_mecheti.jpg" class=""
+      data-sub-html="<h4>Компьютерная инсталляция «Поющий шамаиль» (2006)</h4>">
       <img src="../img/gallery/Shamail_v_mecheti.jpg" />
     </a>
 
@@ -67,10 +80,22 @@
 
 
   </div>
+  <script>
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4';
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'facebook-jssdk');
+  </script>
   <script src="../js/lightgallery.js"></script>
   <script>
     var imagPop = document.getElementById("lightgallery");
     lightGallery(imagPop);
+
   </script>
 </body>
 
