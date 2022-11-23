@@ -26,18 +26,20 @@
 				<include src="./header.html"></include>
 			</div>
 			<div class="flex1 layout4">
-				<div class="item8 ">
+				<div data-da=".menu__adaptive, 1400" class="item8 ">
 					<include src="./menu.html"></include>
 				</div>
 				<div class="item9 main_main">
 					<include src=""></include>
 				</div>
+				<div class="menu__adaptive"></div>
 			</div>
 			<div class="flex layout7">
 				<include src="./footer.html"></include>
 			</div>
 		</div>
 	</div>
+	<script src="js/dynamic_adapt.js"></script>
 	<script>
 		if (getUrlParameter('p') !== false && getUrlParameter('p') != 'header' && getUrlParameter('p') != 'footer' && getUrlParameter('p') != '' && getUrlParameter('p') !== null) {
 			file_url = getUrlParameter('p');
