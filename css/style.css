@@ -1450,7 +1450,7 @@ h3{
 }
 .block6:hover .text_body1{
     color: rgb(222, 249, 253);
-    text-decoration: underline;
+   
 }
 .block10_toggle:hover{
     background-color: rgba(121, 118, 118, 0.336);
@@ -1458,10 +1458,14 @@ h3{
 }
 .block10_toggle:hover .text_body1{
     color: rgb(222, 249, 253);
-    text-decoration: underline;
+    
 }
 .block19:hover{ 
     background: linear-gradient(266.6deg, rgba(19, 78, 78, 0.5) 0, rgba(86, 72, 40, 0) 47.92%, rgba(156, 37, 0, 0.5) 100%);
+    
+}
+
+.news-block__link:hover{
     
 }
 
@@ -1509,3 +1513,6 @@ h3{
     transform: scale(1.15);
 
   }
+.text-underline:hover {
+    text-decoration: underline;
+}
