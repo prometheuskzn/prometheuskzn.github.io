@@ -61,7 +61,12 @@ a {
 .flex1 {
     display: flex;
 }
-
+.main_block_biogr_i2{
+    
+}
+.main_block_biogr{
+    
+}
 .flex1.layout1 {
     position: relative;
     width: 73.13%;
@@ -1278,7 +1283,6 @@ h3{
     line-height: 150%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 0 0 20px 0 ;
 }
 .layout-font{
     font-family: 'Eternal Logo';
@@ -1503,4 +1507,5 @@ h3{
 
   .icon__social:hover{
     transform: scale(1.15);
+
   }
