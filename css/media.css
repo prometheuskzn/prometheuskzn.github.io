@@ -33,6 +33,11 @@
 		text-align: center!important;
 	}
 }
+@media (max-width: 340px){
+	.head_header{
+		margin: 0 170px 0 0;
+	}
+}
 @media (max-width: 1400px) {
 	.head_header .flex1 > .item4 {
 		display: none!important;
@@ -128,5 +133,10 @@
 	.flex1 > .item15,
 	.flex1 > .item16 {
 		flex: none!important;
+	}
+}
+@media (max-width: 360px){
+	h3{ 
+		font-size: 1.5rem;
 	}
 }

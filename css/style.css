@@ -1399,9 +1399,13 @@ h3{
     background-color: white;
     border-radius: 3px;
 }
-.archive__hover:hover{
+
+.archive__hover-text{
     
-    
+}
+.block23{
+    word-wrap: break-word;
+        word-break: break-all;
 }
 .block23:hover{
     transform: scale(1.1);
@@ -1417,6 +1421,11 @@ h3{
   gap: 15px;
  
     
+ }
+ .archive__hover-text{
+    text-align: center;
+        
+
  }
  .news-block__item{
     
@@ -1516,3 +1525,14 @@ h3{
 .text-underline:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
