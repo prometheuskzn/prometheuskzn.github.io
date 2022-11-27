@@ -143,33 +143,30 @@
 	<div class="row input-container">
 		<div class="col-xs-12">
 			<div class="styled-input wide">
-				<input type="text" required />
+				<input class="input" name="summ" value="500" type="text">
 				<label>Сумма<font color="white">*</font></label>
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-12">
 			<div class="styled-input">
-				<input type="email" required />
+				<input class="input" name="email" placeholder="Необязательно. На него придёт чек о переводе" type="email">
 				<label>Адрес электронной почты</label>
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-12">
 			<div class="styled-input" style="float:right;">
-				<input type="text" required />
+				<input class="input" name="tel" placeholder="Необязательно. На него придёт чек о переводе" type="tel">
 				<label>Номер телефона</label>
 			</div>
 		</div>
 		<div class="col-xs-12">
 			<div class="styled-input wide">
-				<textarea required></textarea>
+				<input class="input" name="comment" placeholder="Его увидит команда фонда" type="text">
 				<label>Комментарий</label>
 			</div>
 		</div>
 		<div class="col-xs-12">
-
-			<button class="button btn-lrg submit-btn" type="submit" onclick="freekassa_go()">Перейти к выбору способа
-				оплаты</button>
-
+			<button class="button btn-lrg submit-btn" type="submit" onclick="freekassa_go()">Перейти к выбору способа оплаты</button>
 		</div>
 
 	</div>
